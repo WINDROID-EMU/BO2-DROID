@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/controls_root" android:background="?t6c_bg_deep_ff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="6.0dip" android:layout_width="112.0dip" android:layout_height="wrap_content">
+            <Button android:id="@id/button_back" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/action_cancel" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_controls_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/controls_save" style="@style/T6.Button.Primary" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/controls_profile" style="@style/T6.Text.Faint" />
+            <Button android:id="@id/button_controls_profile" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_controls_restore" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/controls_restore" style="@style/T6.Button.Ghost" />
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/controls_surface" android:background="?t6c_bg_card_ff" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="6.0dip" android:layout_width="132.0dip" android:layout_height="wrap_content">
+            <TextView android:id="@id/text_controls_selected" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/T6.Text.SectionLabel" />
+            <TextView android:id="@id/text_controls_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" style="@style/T6.Text.Faint" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/button_size_minus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="−" android:layout_weight="1.0" style="@style/T6.Button.Ghost" />
+                <Button android:id="@id/button_size_plus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="+" android:layout_weight="1.0" style="@style/T6.Button.Ghost" />
+            </LinearLayout>
+            <TextView android:id="@id/text_controls_opacity" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/T6.Text.Faint" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/button_opacity_minus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="−" android:layout_weight="1.0" style="@style/T6.Button.Ghost" />
+                <Button android:id="@id/button_opacity_plus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="+" android:layout_weight="1.0" style="@style/T6.Button.Ghost" />
+            </LinearLayout>
+            <TextView android:id="@id/text_controls_sensitivity" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/T6.Text.Faint" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/button_sensitivity_minus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="−" android:layout_weight="1.0" style="@style/T6.Button.Ghost" />
+                <Button android:id="@id/button_sensitivity_plus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="+" android:layout_weight="1.0" style="@style/T6.Button.Ghost" />
+            </LinearLayout>
+            <TextView android:id="@id/text_controls_deadzone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/T6.Text.Faint" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/button_deadzone_minus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="−" android:layout_weight="1.0" style="@style/T6.Button.Ghost" />
+                <Button android:id="@id/button_deadzone_plus" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="+" android:layout_weight="1.0" style="@style/T6.Button.Ghost" />
+            </LinearLayout>
+            <Button android:id="@id/button_controls_enabled" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/T6.Button.Ghost" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

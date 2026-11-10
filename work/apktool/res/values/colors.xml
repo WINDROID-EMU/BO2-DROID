@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="t6_accent">#ff06bfdd</color>
+    <color name="t6_accent_bright">#ff4fe3ff</color>
+    <color name="t6_accent_deep">#ff0a7f96</color>
+    <color name="t6_bg_card">#ff0b1c24</color>
+    <color name="t6_bg_deep">#ff04090c</color>
+    <color name="t6_bg_elevated">#ff10262f</color>
+    <color name="t6_bg_header">#ff050f14</color>
+    <color name="t6_bg_panel">#ff08161d</color>
+    <color name="t6_border">#ff1d3d49</color>
+    <color name="t6_border_strong">#ff2a5a6a</color>
+    <color name="t6_danger">#ffe2564a</color>
+    <color name="t6_icon_bg">#ff04090c</color>
+    <color name="t6_info">#ff5fa8d3</color>
+    <color name="t6_ok">#ff3fd08a</color>
+    <color name="t6_scrim">#b304090c</color>
+    <color name="t6_text">#ffeaf7fb</color>
+    <color name="t6_text_dim">#ffa8c4ce</color>
+    <color name="t6_text_disabled">#ff4d6670</color>
+    <color name="t6_text_faint">#ff6e8f9b</color>
+    <color name="t6_warning">#ffe8b23c</color>
+</resources>

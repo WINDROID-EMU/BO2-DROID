@@ -1,0 +1,14 @@
+# Saídas de build
+app/build/
+build/
+.gradle/
+captures/
+*.log
+
+# Caminho do SDK local (específico da máquina)
+local.properties
+
+# Duplicatas: o apktool copia assets/ e lib/ inteiros, e eles já estão
+# versionados em app/src/main/assets e app/src/main/jniLibs.
+work/apktool/assets/
+work/apktool/lib/

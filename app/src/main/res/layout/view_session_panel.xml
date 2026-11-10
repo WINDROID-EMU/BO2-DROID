@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/session_panel_root" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/session_panel_scrim" android:background="?t6c_bg_deep_b3" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:layout_gravity="start" android:id="@id/session_panel_sheet" android:background="@drawable/t6_session_sheet" android:focusable="true" android:clickable="true" android:layout_width="300.0dip" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:padding="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/app_name" style="@style/T6.Text.Title" />
+            <View android:background="@drawable/t6_accent_bar" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="12.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_session_exit" android:background="@drawable/t6_row" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="18.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/session_action_exit" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:textSize="24.0sp" android:textColor="?t6c_accent_ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/row_session_fps" android:background="@drawable/t6_row" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="18.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/session_action_fps" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                    <TextView android:id="@id/session_fps_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/session_badge_not_requested" style="@style/T6.Text.Badge.Muted" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_session_touch" android:background="@drawable/t6_row" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="18.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/session_action_touch" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:id="@id/session_touch_badge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/session_touch_on" style="@style/T6.Text.Badge" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_session_keyboard" android:background="@drawable/t6_row" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="18.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/session_action_keyboard" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:textSize="24.0sp" android:textColor="?t6c_accent_ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_session_console" android:background="@drawable/t6_row" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="18.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/session_action_console" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:textSize="24.0sp" android:textColor="?t6c_accent_ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_session_logs" android:background="@drawable/t6_row" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="18.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/session_action_logs" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:textSize="24.0sp" android:textColor="?t6c_accent_ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_session_controls" android:background="@drawable/t6_row" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:paddingHorizontal="16.0dip" android:paddingVertical="18.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/session_action_controls" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:textSize="24.0sp" android:textColor="?t6c_accent_ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" />
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/session_hint" style="@style/T6.Text.Faint" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

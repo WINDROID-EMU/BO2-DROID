@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/settings_root" android:background="?t6c_bg_deep_ff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="20.0dip" android:paddingVertical="20.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/button_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_back" style="@style/T6.Button.Ghost" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="14.0dip">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_title" style="@style/T6.Text.Title" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:background="@drawable/t6_accent_bar" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="14.0dip" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/settings_section_game" style="@style/T6.Text.SectionLabel" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/t6_row" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_folder" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_folder_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/folder_none" style="@style/T6.Text.Body" />
+            <TextView android:id="@id/text_folder_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" style="@style/T6.Text.Faint" />
+            <Button android:id="@id/button_pick_folder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/action_pick_folder" style="@style/T6.Button" />
+            <Button android:id="@id/button_grant_access" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/action_grant_access" style="@style/T6.Button" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/row_player_name" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_player_name" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_player_name_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/player_name_none" style="@style/T6.Text.Body" />
+            <TextView android:id="@id/text_player_name_detail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" style="@style/T6.Text.Faint" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/settings_section_video" style="@style/T6.Text.SectionLabel" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/row_driver" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_driver_label" style="@style/T6.Text.SectionLabel" />
+                <TextView android:id="@id/text_driver_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_driver_value" style="@style/T6.Text.Body" />
+            </LinearLayout>
+            <TextView android:textSize="24.0sp" android:textColor="?t6c_accent_ff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/row_dxvk" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_dxvk_label" style="@style/T6.Text.SectionLabel" />
+                <TextView android:id="@id/text_dxvk_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_dxvk_builtin" style="@style/T6.Text.Body" />
+            </LinearLayout>
+            <TextView android:textSize="24.0sp" android:textColor="?t6c_accent_ff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/row_tu_debug" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_tu_debug_label" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_tu_debug_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_tu_debug_auto" style="@style/T6.Text.Body" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/row_env_vars" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_env_label" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_env_vars_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_env_none" style="@style/T6.Text.Body" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/row_kennel" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_kennel_label" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_kennel_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/kennel_tap_check" style="@style/T6.Text.Body" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/row_resolution" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_resolution_label" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_resolution_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/T6.Text.Body" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/settings_section_input" style="@style/T6.Text.SectionLabel" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/row_controls" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_controls_label" style="@style/T6.Text.SectionLabel" />
+                <TextView android:id="@id/text_controls_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_controls_value" style="@style/T6.Text.Body" />
+            </LinearLayout>
+            <TextView android:textSize="24.0sp" android:textColor="?t6c_accent_ff" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="›" android:layout_marginStart="10.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/row_controller" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_controller_label" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_controller_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/settings_controller_none" style="@style/T6.Text.Body" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/row_touch_mode" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_touch_mode_label" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_touch_mode_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/touch_mode_auto" style="@style/T6.Text.Body" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/settings_section_app" style="@style/T6.Text.SectionLabel" />
+        <LinearLayout android:orientation="vertical" android:id="@id/row_language" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_language_label" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_language_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/language_system" style="@style/T6.Text.Body" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_show_fps" android:background="@drawable/t6_row" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_show_fps" android:layout_weight="1.0" style="@style/T6.Text.RowLabel" />
+            <Switch android:id="@id/switch_show_fps" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_touch_aim_drag" android:background="@drawable/t6_row" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_touch_aim_drag" android:layout_weight="1.0" style="@style/T6.Text.RowLabel" />
+            <Switch android:id="@id/switch_touch_aim_drag" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_touch_stick_sprint" android:background="@drawable/t6_row" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_touch_stick_sprint" android:layout_weight="1.0" style="@style/T6.Text.RowLabel" />
+            <Switch android:id="@id/switch_touch_stick_sprint" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/row_touch_sprint_threshold" android:background="@drawable/t6_row" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:id="@id/text_touch_sprint_threshold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_touch_sprint_threshold" style="@style/T6.Text.RowLabel" />
+            <SeekBar android:id="@id/seek_touch_sprint_threshold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:max="50" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/row_touch_ads_fire" android:background="@drawable/t6_row" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/settings_touch_ads_fire" android:layout_weight="1.0" style="@style/T6.Text.RowLabel" />
+            <Switch android:id="@id/switch_touch_ads_fire" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/settings_section_info" style="@style/T6.Text.SectionLabel" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/t6_panel" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_cpu" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:gravity="end" android:id="@id/text_info_cpu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_unavailable" android:layout_weight="2.0" style="@style/T6.Text.Body" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_gpu" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:gravity="end" android:id="@id/text_info_gpu" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_unavailable" android:layout_weight="2.0" style="@style/T6.Text.Body" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_ram" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:gravity="end" android:id="@id/text_info_ram" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_unavailable" android:layout_weight="2.0" style="@style/T6.Text.Body" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_vulkan" android:layout_weight="1.0" style="@style/T6.Text.SectionLabel" />
+                <TextView android:gravity="end" android:id="@id/text_info_vulkan" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/info_unavailable" android:layout_weight="2.0" style="@style/T6.Text.Body" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/row_theme" android:background="@drawable/t6_row" android:padding="16.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip">
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_theme_label" style="@style/T6.Text.RowLabel" />
+            <TextView android:id="@id/text_theme_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/theme_blue" style="@style/T6.Text.Body" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/button_discord" android:background="@drawable/t6_button_discord" android:padding="14.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <ImageView android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ic_discord" android:contentDescription="@null" />
+            <TextView android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_discord" android:layout_marginStart="12.0dip" style="@style/T6.Text.RowLabel" />
+        </LinearLayout>
+        <TextView android:id="@id/text_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" style="@style/T6.Text.Faint" />
+    </LinearLayout>
+</ScrollView>

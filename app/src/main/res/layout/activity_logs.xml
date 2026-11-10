@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/logs_root" android:background="?t6c_bg_deep_ff" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/button_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_back" style="@style/T6.Button.Ghost" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_title" android:layout_marginStart="12.0dip" style="@style/T6.Text.Title" />
+        <EditText android:textSize="14.0sp" android:textColor="?t6c_text_ff" android:textColorHint="?t6c_text_faint_ff" android:id="@id/edit_logs_search" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/logs_search_hint" android:maxLines="1" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch|flagNoExtractUi|flagNoFullscreen" android:layout_marginStart="16.0dip" />
+    </LinearLayout>
+    <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/logs_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:id="@id/button_logs_cat_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_cat_all" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_logs_cat_engine" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_cat_engine" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_logs_cat_graphics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_cat_graphics" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_logs_cat_host" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_cat_host" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_logs_cat_audio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_cat_audio_net" style="@style/T6.Button.Ghost" />
+            <View android:layout_width="12.0dip" android:layout_height="1.0dip" />
+            <Button android:id="@id/button_logs_level" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_logs_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_pause" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_logs_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_refresh" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_logs_copy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_copy" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_logs_clear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_clear" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_logs_export" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/logs_export" style="@style/T6.Button.Ghost" />
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView android:id="@id/text_logs_count" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/T6.Text.Faint" />
+    <ListView android:id="@id/list_logs" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="4.0dip" android:transcriptMode="normal" android:divider="@null" android:layout_weight="1.0" android:fastScrollEnabled="true" />
+</LinearLayout>

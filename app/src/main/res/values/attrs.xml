@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="t6c_accent_33" format="color" />
+    <attr name="t6c_accent_66" format="color" />
+    <attr name="t6c_accent_bright_ff" format="color" />
+    <attr name="t6c_accent_deep_d9" format="color" />
+    <attr name="t6c_accent_deep_e6" format="color" />
+    <attr name="t6c_accent_ff" format="color" />
+    <attr name="t6c_bg_card_ff" format="color" />
+    <attr name="t6c_bg_deep_00" format="color" />
+    <attr name="t6c_bg_deep_80" format="color" />
+    <attr name="t6c_bg_deep_b3" format="color" />
+    <attr name="t6c_bg_deep_f0" format="color" />
+    <attr name="t6c_bg_deep_ff" format="color" />
+    <attr name="t6c_bg_elevated_c0" format="color" />
+    <attr name="t6c_bg_elevated_cc" format="color" />
+    <attr name="t6c_bg_header_ff" format="color" />
+    <attr name="t6c_bg_panel_cc" format="color" />
+    <attr name="t6c_bg_panel_f2" format="color" />
+    <attr name="t6c_border_66" format="color" />
+    <attr name="t6c_border_ff" format="color" />
+    <attr name="t6c_border_strong_8c" format="color" />
+    <attr name="t6c_border_strong_ff" format="color" />
+    <attr name="t6c_c040c10_66" format="color" />
+    <attr name="t6c_c06121a_ff" format="color" />
+    <attr name="t6c_c0a1a22_ff" format="color" />
+    <attr name="t6c_c0e2731_ff" format="color" />
+    <attr name="t6c_text_dim_ff" format="color" />
+    <attr name="t6c_text_disabled_ff" format="color" />
+    <attr name="t6c_text_faint_ff" format="color" />
+    <attr name="t6c_text_ff" format="color" />
+</resources>

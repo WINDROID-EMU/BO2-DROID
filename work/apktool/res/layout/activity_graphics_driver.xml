@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/driver_root" android:background="?t6c_bg_deep_ff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="20.0dip" android:paddingVertical="20.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/button_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_back" style="@style/T6.Button.Ghost" />
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/driver_title" android:layout_weight="1.0" android:layout_marginStart="14.0dip" style="@style/T6.Text.Title" />
+        </LinearLayout>
+        <View android:background="@drawable/t6_accent_bar" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="14.0dip" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/driver_section_state" style="@style/T6.Text.SectionLabel" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/t6_row" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:id="@id/text_driver_selected" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/T6.Text.Body" />
+            <TextView android:id="@id/text_driver_active" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/T6.Text.Body" />
+            <TextView android:id="@id/text_driver_gpu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/T6.Text.Body" />
+            <TextView android:id="@id/text_driver_last" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" style="@style/T6.Text.Faint" />
+        </LinearLayout>
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/driver_section_list" style="@style/T6.Text.SectionLabel" />
+        <LinearLayout android:orientation="vertical" android:id="@id/list_drivers" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+            <Button android:id="@id/button_driver_import" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/driver_action_import" android:layout_weight="1.0" style="@style/T6.Button.Ghost" />
+            <Button android:id="@id/button_driver_default" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/driver_action_default" android:layout_weight="1.0" android:layout_marginStart="12.0dip" style="@style/T6.Button.Ghost" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

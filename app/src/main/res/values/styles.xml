@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="T6" />
+    <style name="T6.Button" parent="@style/T6">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?t6c_text_ff</item>
+        <item name="android:background">@drawable/t6_button_secondary</item>
+        <item name="android:minHeight">52.0dip</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="android:paddingHorizontal">18.0dip</item>
+    </style>
+    <style name="T6.Button.Ghost" parent="@style/T6.Button">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textColor">?t6c_accent_bright_ff</item>
+        <item name="android:background">@drawable/t6_button_ghost</item>
+        <item name="android:minHeight">44.0dip</item>
+        <item name="android:paddingHorizontal">14.0dip</item>
+    </style>
+    <style name="T6.Button.Primary" parent="@style/T6.Button">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:background">@drawable/t6_button_primary</item>
+        <item name="android:minHeight">62.0dip</item>
+    </style>
+    <style name="T6.Text" parent="@style/T6" />
+    <style name="T6.Text.Badge" parent="@style/T6.Text">
+        <item name="android:textSize">11.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?t6c_text_ff</item>
+        <item name="android:background">@drawable/t6_badge</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:letterSpacing">0.1</item>
+        <item name="android:paddingHorizontal">8.0dip</item>
+        <item name="android:paddingVertical">3.0dip</item>
+    </style>
+    <style name="T6.Text.Badge.Muted" parent="@style/T6.Text.Badge">
+        <item name="android:textColor">?t6c_text_dim_ff</item>
+        <item name="android:background">@drawable/t6_badge_muted</item>
+    </style>
+    <style name="T6.Text.Body" parent="@style/T6.Text">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">?t6c_text_ff</item>
+    </style>
+    <style name="T6.Text.CardTitle" parent="@style/T6.Text">
+        <item name="android:textSize">28.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?t6c_text_ff</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:letterSpacing">0.08</item>
+    </style>
+    <style name="T6.Text.Dim" parent="@style/T6.Text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">?t6c_text_dim_ff</item>
+    </style>
+    <style name="T6.Text.Faint" parent="@style/T6.Text">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">?t6c_text_faint_ff</item>
+    </style>
+    <style name="T6.Text.Notice" parent="@style/T6.Text">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/t6_warning</item>
+    </style>
+    <style name="T6.Text.RowLabel" parent="@style/T6.Text.SectionLabel">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+    <style name="T6.Text.SectionLabel" parent="@style/T6.Text">
+        <item name="android:textSize">13.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?t6c_accent_ff</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:letterSpacing">0.14</item>
+    </style>
+    <style name="T6.Text.Title" parent="@style/T6.Text">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?t6c_text_ff</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+    <style name="T6PaletteBlue">
+        <item name="t6c_accent_33">#3306bfdd</item>
+        <item name="t6c_accent_66">#6606bfdd</item>
+        <item name="t6c_accent_bright_ff">#ff4fe3ff</item>
+        <item name="t6c_accent_deep_d9">#d90a7f96</item>
+        <item name="t6c_accent_deep_e6">#e60a7f96</item>
+        <item name="t6c_accent_ff">#ff06bfdd</item>
+        <item name="t6c_bg_card_ff">#ff0b1c24</item>
+        <item name="t6c_bg_deep_00">#0004090c</item>
+        <item name="t6c_bg_deep_80">#8004090c</item>
+        <item name="t6c_bg_deep_b3">#b304090c</item>
+        <item name="t6c_bg_deep_f0">#f004090c</item>
+        <item name="t6c_bg_deep_ff">#ff04090c</item>
+        <item name="t6c_bg_elevated_c0">#c010262f</item>
+        <item name="t6c_bg_elevated_cc">#cc10262f</item>
+        <item name="t6c_bg_header_ff">#ff050f14</item>
+        <item name="t6c_bg_panel_cc">#cc08161d</item>
+        <item name="t6c_bg_panel_f2">#f208161d</item>
+        <item name="t6c_border_66">#661d3d49</item>
+        <item name="t6c_border_ff">#ff1d3d49</item>
+        <item name="t6c_border_strong_8c">#8c2a5a6a</item>
+        <item name="t6c_border_strong_ff">#ff2a5a6a</item>
+        <item name="t6c_c040c10_66">#66040c10</item>
+        <item name="t6c_c06121a_ff">#ff06121a</item>
+        <item name="t6c_c0a1a22_ff">#ff0a1a22</item>
+        <item name="t6c_c0e2731_ff">#ff0e2731</item>
+        <item name="t6c_text_dim_ff">#ffa8c4ce</item>
+        <item name="t6c_text_disabled_ff">#ff4d6670</item>
+        <item name="t6c_text_faint_ff">#ff6e8f9b</item>
+        <item name="t6c_text_ff">#ffeaf7fb</item>
+    </style>
+    <style name="T6PaletteOrange">
+        <item name="t6c_accent_33">#33dd7206</item>
+        <item name="t6c_accent_66">#66dd7206</item>
+        <item name="t6c_accent_bright_ff">#ffffa74f</item>
+        <item name="t6c_accent_deep_d9">#d996500a</item>
+        <item name="t6c_accent_deep_e6">#e696500a</item>
+        <item name="t6c_accent_ff">#ffdd7206</item>
+        <item name="t6c_bg_card_ff">#ff24180b</item>
+        <item name="t6c_bg_deep_00">#000c0804</item>
+        <item name="t6c_bg_deep_80">#800c0804</item>
+        <item name="t6c_bg_deep_b3">#b30c0804</item>
+        <item name="t6c_bg_deep_f0">#f00c0804</item>
+        <item name="t6c_bg_deep_ff">#ff0c0804</item>
+        <item name="t6c_bg_elevated_c0">#c02f2010</item>
+        <item name="t6c_bg_elevated_cc">#cc2f2010</item>
+        <item name="t6c_bg_header_ff">#ff140c05</item>
+        <item name="t6c_bg_panel_cc">#cc1d1208</item>
+        <item name="t6c_bg_panel_f2">#f21d1208</item>
+        <item name="t6c_border_66">#6649331d</item>
+        <item name="t6c_border_ff">#ff49331d</item>
+        <item name="t6c_border_strong_8c">#8c6a4a2a</item>
+        <item name="t6c_border_strong_ff">#ff6a4a2a</item>
+        <item name="t6c_c040c10_66">#66100a04</item>
+        <item name="t6c_c06121a_ff">#ff1a1006</item>
+        <item name="t6c_c0a1a22_ff">#ff22160a</item>
+        <item name="t6c_c0e2731_ff">#ff311f0e</item>
+        <item name="t6c_text_dim_ff">#ffcebba8</item>
+        <item name="t6c_text_disabled_ff">#ff705e4d</item>
+        <item name="t6c_text_faint_ff">#ff9b846e</item>
+        <item name="t6c_text_ff">#fffbf2ea</item>
+    </style>
+    <style name="T6PaletteRed">
+        <item name="t6c_accent_33">#33dd0614</item>
+        <item name="t6c_accent_66">#66dd0614</item>
+        <item name="t6c_accent_bright_ff">#ffff4f5b</item>
+        <item name="t6c_accent_deep_d9">#d9960a13</item>
+        <item name="t6c_accent_deep_e6">#e6960a13</item>
+        <item name="t6c_accent_ff">#ffdd0614</item>
+        <item name="t6c_bg_card_ff">#ff240b0d</item>
+        <item name="t6c_bg_deep_00">#000c0405</item>
+        <item name="t6c_bg_deep_80">#800c0405</item>
+        <item name="t6c_bg_deep_b3">#b30c0405</item>
+        <item name="t6c_bg_deep_f0">#f00c0405</item>
+        <item name="t6c_bg_deep_ff">#ff0c0405</item>
+        <item name="t6c_bg_elevated_c0">#c02f1012</item>
+        <item name="t6c_bg_elevated_cc">#cc2f1012</item>
+        <item name="t6c_bg_header_ff">#ff140506</item>
+        <item name="t6c_bg_panel_cc">#cc1d0809</item>
+        <item name="t6c_bg_panel_f2">#f21d0809</item>
+        <item name="t6c_border_66">#66491d20</item>
+        <item name="t6c_border_ff">#ff491d20</item>
+        <item name="t6c_border_strong_8c">#8c6a2a2e</item>
+        <item name="t6c_border_strong_ff">#ff6a2a2e</item>
+        <item name="t6c_c040c10_66">#66100405</item>
+        <item name="t6c_c06121a_ff">#ff1a0607</item>
+        <item name="t6c_c0a1a22_ff">#ff220a0c</item>
+        <item name="t6c_c0e2731_ff">#ff310e10</item>
+        <item name="t6c_text_dim_ff">#ffcea8ab</item>
+        <item name="t6c_text_disabled_ff">#ff704d4f</item>
+        <item name="t6c_text_faint_ff">#ff9b6e71</item>
+        <item name="t6c_text_ff">#fffbeaeb</item>
+    </style>
+    <style name="T6ThemeBase" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="t6c_accent_33">#33dd7206</item>
+        <item name="t6c_accent_66">#66dd7206</item>
+        <item name="t6c_accent_bright_ff">#ffffa74f</item>
+        <item name="t6c_accent_deep_d9">#d996500a</item>
+        <item name="t6c_accent_deep_e6">#e696500a</item>
+        <item name="t6c_accent_ff">#ffdd7206</item>
+        <item name="t6c_bg_card_ff">#ff24180b</item>
+        <item name="t6c_bg_deep_00">#000c0804</item>
+        <item name="t6c_bg_deep_80">#800c0804</item>
+        <item name="t6c_bg_deep_b3">#b30c0804</item>
+        <item name="t6c_bg_deep_f0">#f00c0804</item>
+        <item name="t6c_bg_deep_ff">#ff0c0804</item>
+        <item name="t6c_bg_elevated_c0">#c02f2010</item>
+        <item name="t6c_bg_elevated_cc">#cc2f2010</item>
+        <item name="t6c_bg_header_ff">#ff140c05</item>
+        <item name="t6c_bg_panel_cc">#cc1d1208</item>
+        <item name="t6c_bg_panel_f2">#f21d1208</item>
+        <item name="t6c_border_66">#6649331d</item>
+        <item name="t6c_border_ff">#ff49331d</item>
+        <item name="t6c_border_strong_8c">#8c6a4a2a</item>
+        <item name="t6c_border_strong_ff">#ff6a4a2a</item>
+        <item name="t6c_c040c10_66">#66100a04</item>
+        <item name="t6c_c06121a_ff">#ff1a1006</item>
+        <item name="t6c_c0a1a22_ff">#ff22160a</item>
+        <item name="t6c_c0e2731_ff">#ff311f0e</item>
+        <item name="t6c_text_dim_ff">#ffcebba8</item>
+        <item name="t6c_text_disabled_ff">#ff705e4d</item>
+        <item name="t6c_text_faint_ff">#ff9b846e</item>
+        <item name="t6c_text_ff">#fffbf2ea</item>
+    </style>
+    <style name="Theme.T6Rebuild" parent="@style/T6ThemeBase">
+        <item name="android:colorBackground">?t6c_bg_deep_ff</item>
+        <item name="android:textColorPrimary">?t6c_text_ff</item>
+        <item name="android:textColorSecondary">?t6c_text_dim_ff</item>
+        <item name="android:windowBackground">?t6c_bg_deep_ff</item>
+        <item name="android:textColorHint">?t6c_text_faint_ff</item>
+        <item name="android:colorControlActivated">?t6c_accent_ff</item>
+        <item name="android:colorControlHighlight">?t6c_accent_33</item>
+        <item name="android:colorAccent">?t6c_accent_ff</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">?t6c_bg_header_ff</item>
+        <item name="android:navigationBarColor">?t6c_bg_header_ff</item>
+    </style>
+</resources>

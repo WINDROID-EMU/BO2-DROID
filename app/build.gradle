@@ -1,0 +1,65 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'org.wiiucoop.bo2android'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'com.t6requiem.bo2arm'
+        minSdk 26
+        targetSdk 35
+        versionCode 25
+        versionName '2.1.0-beta'
+
+        ndk {
+            abiFilters 'arm64-v8a'
+        }
+
+        // Campos de BuildConfig recuperados do BuildConfig.class original.
+        buildConfigField 'boolean', 'T6_ENGINE_DIAG', 'true'
+        buildConfigField 'String', 'T6_SIGNING_CERT_SHA256', '"2b4f103bf8dd7852738478add1399ade5fc115b20bf4314f101c466e404b0262"'
+        buildConfigField 'int', 'T6_SOURCE_CODE', '8'
+        buildConfigField 'String', 'T6_UPDATE_CHANNEL', '"public"'
+        buildConfigField 'String', 'T6_UPDATE_CHANNEL_KEY', '""'
+        buildConfigField 'String', 'T6_UPDATE_URL', '"https://t6requiem-update.soldadoghostzm.workers.dev"'
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+        release {
+            minifyEnabled false
+            // A assinatura original é verificada por T6Integrity; para
+            // distribuir, assine com a chave correspondente ao SHA-256 acima.
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    packaging {
+        // As bibliotecas de hook são abertas por caminho no diretório nativo,
+        // então precisam existir extraídas no APK instalado.
+        jniLibs {
+            useLegacyPackaging true
+        }
+        resources {
+            excludes += ['META-INF/*.version', 'META-INF/*.kotlin_module']
+        }
+    }
+
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}

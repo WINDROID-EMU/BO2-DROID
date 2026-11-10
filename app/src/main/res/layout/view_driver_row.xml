@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/t6_row" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:id="@id/text_driver_row_title" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/T6.Text.SectionLabel" />
+        <TextView android:id="@id/text_driver_row_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" style="@style/T6.Text.Faint" />
+    </LinearLayout>
+    <Button android:id="@id/button_driver_row_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/driver_row_remove" android:layout_marginStart="10.0dip" style="@style/T6.Button.Ghost" />
+    <Button android:id="@id/button_driver_row_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" style="@style/T6.Button.Ghost" />
+</LinearLayout>

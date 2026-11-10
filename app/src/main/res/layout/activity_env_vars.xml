@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/env_root" android:background="?t6c_bg_deep_ff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingHorizontal="20.0dip" android:paddingVertical="20.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:id="@id/button_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/action_back" style="@style/T6.Button.Ghost" />
+            <TextView android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/env_title" android:layout_weight="1.0" android:layout_marginStart="14.0dip" style="@style/T6.Text.Title" />
+            <Button android:id="@id/button_env_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/env_save" style="@style/T6.Button.Primary" />
+        </LinearLayout>
+        <View android:background="@drawable/t6_accent_bar" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="14.0dip" />
+        <TextView android:id="@id/text_env_status" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" style="@style/T6.Text.Notice" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/env_note" style="@style/T6.Text.Faint" />
+        <LinearLayout android:orientation="vertical" android:id="@id/env_rows" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:id="@id/text_env_empty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/env_empty" style="@style/T6.Text.Dim" />
+        <Button android:id="@id/button_env_add" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/env_add" style="@style/T6.Button.Ghost" />
+    </LinearLayout>
+</ScrollView>
